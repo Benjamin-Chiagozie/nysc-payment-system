@@ -33,6 +33,10 @@ app.use('/api/', limiter);
 app.use(express.json({ limit: '10kb' }));
 app.use(express.urlencoded({ extended: true }));
 
+// ── Routes ───────────────────────────────────────────────────
+const authRoutes = require('./routes/authRoutes');
+app.use('/api/auth', authRoutes);
+
 // ── Health Check Route ───────────────────────────────────────────────
 // This is a simple route to confirm your server is running
 app.get('/api/health', (req, res) => {
