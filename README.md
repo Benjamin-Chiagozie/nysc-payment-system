@@ -32,7 +32,7 @@
 
 ## 🚨 The Problem
 
-The National Youth Service Corps (NYSC) scheme mobilizes approximately **350,000 corps members** annually across Nigeria's 36 states and FCT. Every month, each corps member is entitled to a ₦77,000 allowance — colloquially known as **"allawee"** — funded by the Federal Government of Nigeria.
+The National Youth Service Corps (NYSC) scheme mobilizes approximately **350,000 corps members** annually across Nigeria's 36 states and FCT. Every month, each corps member is entitled to a ₦77,000 allowance — colloquially known as **"allowance"** — funded by the Federal Government of Nigeria.
 
 The current disbursement process is **manual, fragmented, and structurally inadequate**, producing five recurring failures:
 
