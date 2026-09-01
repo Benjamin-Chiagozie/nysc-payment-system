@@ -37,10 +37,12 @@ app.use(express.urlencoded({ extended: true }));
 const authRoutes = require('./routes/authRoutes');
 const corpsMemberRoutes = require('./routes/corpsMemberRoutes');
 const validationRoutes = require('./routes/validationRoutes');
+const paymentRoutes = require('./routes/paymentRoutes');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/corps-members', corpsMemberRoutes);
 app.use('/api/validation', validationRoutes);
+app.use('/api/payments', paymentRoutes);
 
 // ── Health Check Route ───────────────────────────────────────────────
 // This is a simple route to confirm your server is running
