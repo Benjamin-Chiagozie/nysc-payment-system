@@ -34,19 +34,21 @@ app.use(express.json({ limit: '10kb' }));
 app.use(express.urlencoded({ extended: true }));
 
 // ── Routes ───────────────────────────────────────────────────
-const authRoutes = require('./routes/authRoutes');
+const authRoutes      = require('./routes/authRoutes');
 const corpsMemberRoutes = require('./routes/corpsMemberRoutes');
-const validationRoutes = require('./routes/validationRoutes');
-const paymentRoutes = require('./routes/paymentRoutes');
-const trackingRoutes = require('./routes/trackingRoutes');
-const webhookRoutes = require('./routes/webhookRoutes');
+const validationRoutes  = require('./routes/validationRoutes');
+const paymentRoutes     = require('./routes/paymentRoutes');
+const trackingRoutes    = require('./routes/trackingRoutes');
+const webhookRoutes     = require('./routes/webhookRoutes');
+const auditRoutes       = require('./routes/auditRoutes');
 
-app.use('/api/auth', authRoutes);
+app.use('/api/auth',          authRoutes);
 app.use('/api/corps-members', corpsMemberRoutes);
-app.use('/api/validation', validationRoutes);
-app.use('/api/payments', paymentRoutes);
-app.use('/api/tracking', trackingRoutes);
-app.use('/api/webhook', webhookRoutes);
+app.use('/api/validation',    validationRoutes);
+app.use('/api/payments',      paymentRoutes);
+app.use('/api/tracking',      trackingRoutes);
+app.use('/api/webhook',       webhookRoutes);
+app.use('/api/audit',         auditRoutes);
 // ── Health Check Route ───────────────────────────────────────────────
 // This is a simple route to confirm your server is running
 app.get('/api/health', (req, res) => {
